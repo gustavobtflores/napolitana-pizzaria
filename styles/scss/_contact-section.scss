@@ -1,0 +1,69 @@
+@import "./variables";
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 100px auto;
+
+  &__title {
+    color: var(--black, #251a15);
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+    font-size: 60px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  &__label {
+    color: #df2200;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #df2200;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    resize: none;
+    margin-top: 4px;
+  }
+
+  &__submit {
+    display: flex;
+    width: 200px;
+    padding: 16px 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    border-radius: 8px;
+    background: #cc1f00;
+
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+
+    &:hover {
+      background: $darker-red;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/landing-page.css" />
+    <title>Napolitana Pizzaria</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="site-header">
+        <a href="./index.html"><img class="site-header__logo" src="./assets/img/logo.jpeg" alt="O logotipo da pizzaria napolitana em um fundo vermelho" /></a>
+        <nav class="site-header__nav">
+          <ul class="site-header__nav-list">
+            <li class="site-header__nav-item"><a href="#">Início</a></li>
+            <li class="site-header__nav-item"><a href="#menu">Pratos</a></li>
+            <li class="site-header__nav-item"><a href="#about">Quem somos</a></li>
+            <li class="site-header__nav-item"><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <section class="top-section">
+      <div class="container">
+        <div class="site-welcome">
+          <h1 class="site-welcome__title">Bem-vindo à Napolitana Pizzaria em Garanhuns!</h1>
+          <button type="button" class="site-welcome__cta">Veja nosso cardápio</button>
+        </div>
+        <div class="top-section__background">
+          <img src="./assets/img/top-section.png" alt="Uma pizza em uma placa de madeira com tomate e rúcula" />
+        </div>
+      </div>
+    </section>
+    <section class="menu" id="menu">
+      <h2 class="menu__title">Principais pratos</h2>
+      <div class="container">
+        <div class="menu__item">
+          <img src="./assets/img/pepperoni.png" alt="Pizza de pepperoni em um fundo branco, vista de cima" />
+          <div class="menu__item-info">
+            <h3 class="menu__item-title">Pepperoni</h3>
+            <p class="menu__item-description">
+              Desfrute da clássica pizza de Pepperoni, onde cada mordida é uma explosão de sabores. Nossa base crocante é generosamente coberta com molho de tomate, queijo derretido e fatias
+              suculentas de pepperoni levemente picante. Um toque de orégano fresco completa essa combinação irresistível, criando a pizza perfeita para satisfazer seus desejos.
+            </p>
+            <span class="menu__item-ingredients">
+              Ingredientes: massa de pizza fresca, molho de tomate artesanal, queijo mussarela de alta qualidade, fatias de pepperoni, orégano fresco, azeite de oliva extra virgem, pitada de pimenta
+              preta moída (opcional), pimenta calabresa (opcional, para quem gosta de um toque extra de picância)
+            </span>
+          </div>
+        </div>
+        <div class="menu__item">
+          <img src="./assets/img/vegetariana.png" alt="	Uma pizza vegetariana com legumes e cogumelos em um fundo branco, vista de cima" style="object-fit: cover" />
+          <div class="menu__item-info">
+            <h3 class="menu__item-title">Vegetariana</h3>
+            <p class="menu__item-description">
+              Descubra a pizza vegetariana: frescor e sabor em harmonia. Massa crocante, molho de tomate artesanal, generosa camada de queijo, pimentões, cebolas caramelizadas, cogumelos e azeitonas.
+              Toque de orégano e azeite de oliva. Experiência deliciosamente saudável!
+            </p>
+            <span class="menu__item-ingredients">
+              Ingredientes: massa de pizza fresca, molho de tomate artesanal, queijo mussarela, pimentões coloridos em fatias, cebolas caramelizadas, cogumelos fatiados, azeitonas pretas sem caroço,
+              orégano fresco, azeite de oliva extra virgem.
+            </span>
+          </div>
+        </div>
+        <div class="menu__item">
+          <img src="./assets/img/marguerita.png" alt="Uma pizza de Margherita em um fundo branco, vista de cima" />
+          <div class="menu__item-info">
+            <h3 class="menu__item-title">Margherita</h3>
+            <p class="menu__item-description">
+              Delicie-se com nossa autêntica Pizza Margherita, uma harmoniosa combinação de massa fina e crocante, molho de tomate fresco, generosas fatias de muçarela de búfala derretida e folhas de
+              manjericão fresco, criando uma explosão de sabores italianos em cada mordida.
+            </p>
+            <span class="menu__item-ingredients">Ingredientes: massa de pizza fresca, molho de tomate artesanal, muçarela de búfala, manjericão fresco, azeite de oliva extra virgem.</span>
+          </div>
+        </div>
+        <div class="menu__item">
+          <img src="./assets/img/frangocatu.png" alt="Uma pizza de frago com catupiry em um fundo branco, vista de cima" />
+          <div class="menu__item-info">
+            <h3 class="menu__item-title">Frango c/ catupiry</h3>
+            <p class="menu__item-description">
+              Experimente a deliciosa Pizza de Frango com catupiry, onde a massa crocante abraça o sabor suculento do frango desfiado e se funde perfeitamente com o catupiry cremoso, coberta por uma
+              combinação de queijos derretidos que garantem uma experiência irresistível em cada pedaço.
+            </p>
+            <span class="menu__item-ingredients">
+              Ingredientes: massa de pizza fresca, molho de tomate artesanal, frango desfiado, catupiry, queijos diversos (muçarela, parmesão, provolone), temperos especiais.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <h2 class="about__title">Quem somos</h2>
+      <p class="about__paragraph">
+        A Napolitana Pizzaria não é apenas um restaurante, mas sim uma imersão completa na rica cultura napolitana e no apaixonante mundo da pizza. Fundada por entusiastas dedicados tanto à arte da
+        pizza quanto à autenticidade napolitana, nossa jornada gastronômica é meticulosamente construída para cada apreciador de sabores excepcionais.<br /><br />
+        Nossa equipe é composta por verdadeiros guardiões da tradição das pizzarias napolitanas, que trazem consigo não apenas habilidades culinárias excepcionais, mas também um profundo respeito pela
+        origem e qualidade dos ingredientes. Desde a preparação artesanal da massa até a seleção dos ingredientes mais frescos, cada detalhe é uma manifestação tangível de nosso compromisso com a
+        excelência. Ao nos visitar, você não apenas saboreia uma fatia de pizza, mas também se transporta para as ruas de Nápoles, onde cada mordida é uma conexão com séculos de tradição e um deleite
+        para seu paladar exigente.
+      </p>
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="contact__title">Fale conosco</h2>
+      <form class="contact__form">
+        <label class="contact__label" for="name">Nome</label>
+        <input class="contact__input" id="name" type="text" />
+        <label class="contact__label" for="subject">Assunto</label>
+        <input class="contact__input" id="subject" type="text" />
+        <label class="contact__label" for="message">Mensagem</label>
+        <textarea class="contact__textarea" id="message" cols="30" rows="15"></textarea>
+        <button class="contact__submit">Enviar</button>
+      </form>
+    </section>
+    <footer class="footer">
+      <span>Napolitana Pizzaria © 2023 - Todos os direitos reservados</span>
+    </footer>
+  </body>
+</html>

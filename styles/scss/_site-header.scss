@@ -1,0 +1,33 @@
+@import "./variables";
+
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  padding: 12px 0;
+  position: absolute;
+  z-index: 1;
+
+  &__logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+
+  &__nav-list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+  }
+
+  &__nav-item {
+    color: $deep-brown-color;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:hover {
+      color: $dark-red;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.about {
+  background: url("../../assets/img/about.jpeg");
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+    position: absolute;
+    inset: 0;
+  }
+
+  &__title {
+    color: #fff;
+    text-align: center;
+    font-family: "Lobster";
+    font-size: 60px;
+    font-weight: 400;
+    z-index: 1;
+  }
+
+  &__paragraph {
+    color: #fff;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 40px;
+    z-index: 1;
+  }
+}
