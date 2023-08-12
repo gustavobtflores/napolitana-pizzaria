@@ -7,3 +7,12 @@
 @use "./about-section";
 @use "./contact-section";
 @use "./footer";
+@use "./buttons";
+
+h2 {
+  font-size: 60px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 40px !important;
+  }
+}

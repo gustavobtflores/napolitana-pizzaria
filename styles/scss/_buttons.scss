@@ -1,0 +1,29 @@
+@import "./variables";
+
+.btn {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+}
+
+.btn-primary {
+  background: #cc1f00;
+  color: #fff;
+
+  &:hover {
+    background: $darker-red;
+  }
+}

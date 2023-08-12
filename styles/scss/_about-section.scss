@@ -7,6 +7,10 @@
   background-size: cover;
   position: relative;
 
+  @media screen and (max-width: 768px) {
+    padding: 80px 24px;
+  }
+
   &::after {
     content: "";
     width: 100%;
@@ -27,11 +31,11 @@
   }
 
   &__paragraph {
-    color: #fff;
+    color: #c3c3c3;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     max-width: 600px;
     margin: 0 auto;
     margin-top: 40px;

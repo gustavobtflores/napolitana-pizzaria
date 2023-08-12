@@ -10,8 +10,8 @@
     <title>Napolitana Pizzaria</title>
   </head>
   <body>
-    <div class="container">
-      <header class="site-header">
+    <header class="container">
+      <div class="site-header">
         <a href="./index.html"><img class="site-header__logo" src="./assets/img/logo.jpeg" alt="O logotipo da pizzaria napolitana em um fundo vermelho" /></a>
         <nav class="site-header__nav">
           <ul class="site-header__nav-list">
@@ -21,13 +21,18 @@
             <li class="site-header__nav-item"><a href="#contact">Contato</a></li>
           </ul>
         </nav>
-      </header>
-    </div>
+        <svg class="site-header__hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#251a15" viewBox="0 0 256 256">
+          <path
+            d="M224,120v16a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V120a8,8,0,0,1,8-8H216A8,8,0,0,1,224,120Zm-8,56H40a8,8,0,0,0-8,8v16a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V184A8,8,0,0,0,216,176Zm0-128H40a8,8,0,0,0-8,8V72a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V56A8,8,0,0,0,216,48Z"
+          ></path>
+        </svg>
+      </div>
+    </header>
     <section class="top-section">
       <div class="container">
         <div class="site-welcome">
           <h1 class="site-welcome__title">Bem-vindo à Napolitana Pizzaria em Garanhuns!</h1>
-          <button type="button" class="site-welcome__cta">Veja nosso cardápio</button>
+          <button type="button" class="btn btn-primary site-welcome__cta">Veja nosso cardápio</button>
         </div>
         <div class="top-section__background">
           <img src="./assets/img/top-section.png" alt="Uma pizza em uma placa de madeira com tomate e rúcula" />
@@ -40,7 +45,7 @@
         <div class="menu__item">
           <img src="./assets/img/pepperoni.png" alt="Pizza de pepperoni em um fundo branco, vista de cima" />
           <div class="menu__item-info">
-            <h3 class="menu__item-title">Pepperoni</h3>
+            <strong class="menu__item-title">Pepperoni</strong>
             <p class="menu__item-description">
               Desfrute da clássica pizza de Pepperoni, onde cada mordida é uma explosão de sabores. Nossa base crocante é generosamente coberta com molho de tomate, queijo derretido e fatias
               suculentas de pepperoni levemente picante. Um toque de orégano fresco completa essa combinação irresistível, criando a pizza perfeita para satisfazer seus desejos.
@@ -54,7 +59,7 @@
         <div class="menu__item">
           <img src="./assets/img/vegetariana.png" alt="	Uma pizza vegetariana com legumes e cogumelos em um fundo branco, vista de cima" style="object-fit: cover" />
           <div class="menu__item-info">
-            <h3 class="menu__item-title">Vegetariana</h3>
+            <strong class="menu__item-title">Vegetariana</strong>
             <p class="menu__item-description">
               Descubra a pizza vegetariana: frescor e sabor em harmonia. Massa crocante, molho de tomate artesanal, generosa camada de queijo, pimentões, cebolas caramelizadas, cogumelos e azeitonas.
               Toque de orégano e azeite de oliva. Experiência deliciosamente saudável!
@@ -68,7 +73,7 @@
         <div class="menu__item">
           <img src="./assets/img/marguerita.png" alt="Uma pizza de Margherita em um fundo branco, vista de cima" />
           <div class="menu__item-info">
-            <h3 class="menu__item-title">Margherita</h3>
+            <strong class="menu__item-title">Margherita</strong>
             <p class="menu__item-description">
               Delicie-se com nossa autêntica Pizza Margherita, uma harmoniosa combinação de massa fina e crocante, molho de tomate fresco, generosas fatias de muçarela de búfala derretida e folhas de
               manjericão fresco, criando uma explosão de sabores italianos em cada mordida.
@@ -79,7 +84,7 @@
         <div class="menu__item">
           <img src="./assets/img/frangocatu.png" alt="Uma pizza de frago com catupiry em um fundo branco, vista de cima" />
           <div class="menu__item-info">
-            <h3 class="menu__item-title">Frango c/ catupiry</h3>
+            <strong class="menu__item-title">Frango c/ catupiry</strong>
             <p class="menu__item-description">
               Experimente a deliciosa Pizza de Frango com catupiry, onde a massa crocante abraça o sabor suculento do frango desfiado e se funde perfeitamente com o catupiry cremoso, coberta por uma
               combinação de queijos derretidos que garantem uma experiência irresistível em cada pedaço.
@@ -102,7 +107,7 @@
         para seu paladar exigente.
       </p>
     </section>
-    <section class="contact" id="contact">
+    <section class="contact container" id="contact">
       <h2 class="contact__title">Fale conosco</h2>
       <form class="contact__form">
         <label class="contact__label" for="name">Nome</label>
@@ -111,11 +116,13 @@
         <input class="contact__input" id="subject" type="text" />
         <label class="contact__label" for="message">Mensagem</label>
         <textarea class="contact__textarea" id="message" cols="30" rows="15"></textarea>
-        <button class="contact__submit">Enviar</button>
+        <button class="btn btn-primary contact__submit">Enviar</button>
       </form>
     </section>
     <footer class="footer">
-      <span>Napolitana Pizzaria © 2023 - Todos os direitos reservados</span>
+      <div class="container">
+        <span>Napolitana Pizzaria © 2023 - Todos os direitos reservados</span>
+      </div>
     </footer>
   </body>
 </html>

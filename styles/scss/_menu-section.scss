@@ -29,6 +29,10 @@
 
     &:nth-child(2n) {
       flex-direction: row-reverse;
+
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+      }
     }
 
     &-title {
@@ -64,6 +68,12 @@
       width: 330px;
       height: 330px;
       object-fit: contain;
+    }
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      gap: 24px;
+      text-align: center;
     }
   }
 }

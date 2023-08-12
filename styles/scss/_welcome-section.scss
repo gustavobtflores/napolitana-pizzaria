@@ -11,26 +11,26 @@
     font-size: 64px;
     max-width: 620px;
     font-weight: 400;
+
+    @media screen and (max-width: 992px) {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 44px;
+    }
   }
 
   &__cta {
-    display: inline-flex;
-    padding: 16px 24px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    background: $dark-red;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
     margin-top: 32px;
 
-    &:hover {
-      background: $darker-red;
+    @media screen and (max-width: 992px) {
+      margin: 32px auto 0;
     }
+  }
+
+  @media screen and (max-width: 992px) {
+    text-align: center;
   }
 }
