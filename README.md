@@ -43,4 +43,4 @@ npm run sass
 - [x] Exibição do menu de pizzas da Napolitana Pizzaria.
 - [x] Informações de contato e localização da pizzaria.
 - [x] Design responsivo para dispositivos móveis e desktop.
-- [x] Melhores práticas para otimização do tempo de carregamento da página
+- [x] Uso das melhores práticas para otimização do tempo de carregamento da página
