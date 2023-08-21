@@ -6,7 +6,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
+    />
     <link rel="stylesheet" href="./styles/landing-page.css" />
     <title>Napolitana Pizzaria</title>
   </head>
@@ -108,16 +113,91 @@
         para seu paladar exigente.
       </p>
     </section>
-    <section class="contact container" id="contact">
+    <section class="contact container" id="contact-form" data-current-step="2">
       <h2 class="contact__title">Fale conosco</h2>
+      <div class="contact__steps">
+        <div id="step-1" class="step contact__steps-item">
+          <span>1. Dados pessoais</span>
+          <div class="contact__steps-item__progress"></div>
+        </div>
+        <div id="step-2" class="step contact__steps-item">
+          <span>2. Endereço para entrega</span>
+          <div class="contact__steps-item__progress"></div>
+        </div>
+      </div>
       <form class="contact__form">
-        <label class="contact__label" for="name">Nome</label>
-        <input class="contact__input" id="name" type="text" />
-        <label class="contact__label" for="subject">Assunto</label>
-        <input class="contact__input" id="subject" type="text" />
-        <label class="contact__label" for="message">Mensagem</label>
-        <textarea class="contact__textarea" id="message" cols="30" rows="15"></textarea>
-        <button class="btn btn-primary contact__submit">Enviar</button>
+        <div id="personal-data" style="width: 100%">
+          <div class="contact__form-group">
+            <label class="contact__label">
+              Nome
+              <input class="contact__input" type="text" placeholder="Digite seu nome" />
+            </label>
+            <label class="contact__label">
+              Sobrenome
+              <input type="text" class="contact__input" placeholder="Digite seu sobrenome" />
+            </label>
+          </div>
+          <div class="contact__form-group">
+            <label class="contact__label">
+              CPF
+              <input type="text" class="contact__input" placeholder="00000-000" />
+            </label>
+          </div>
+          <div class="contact__form-group">
+            <label class="contact__label">
+              Nome da mãe
+              <input type="text" class="contact__input" placeholder="Nome completo da mãe" />
+            </label>
+          </div>
+          <div class="contact__form-group">
+            <label class="contact__label">
+              Gênero
+              <select name="gender" class="contact__select contact__input">
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
+                <option value="non-binary">Não-binário</option>
+                <option value="other">Outro</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div id="address" style="width: 100%">
+          <div class="contact__form-group">
+            <label class="contact__label">
+              CEP
+              <input class="contact__input" type="text" maxlength="10" />
+            </label>
+          </div>
+          <div class="contact__form-group">
+            <label class="contact__label">
+              Rua
+              <input class="contact__input" type="text" maxlength="100" />
+            </label>
+          </div>
+          <div class="contact__form-group">
+            <label class="contact__label">
+              Número
+              <input class="contact__input" maxlength="10" />
+            </label>
+
+            <label class="contact__label">
+              Bairro
+              <input type="text" class="contact__input" />
+            </label>
+          </div>
+          <div class="contact__form-group">
+            <label class="contact__label">
+              Complemento
+              <input class="contact__input" type="text" />
+            </label>
+          </div>
+        </div>
+
+        <div class="contact__controls">
+          <span id="previous-step" class="contact__previous">Etapa anterior</span>
+          <button id="next-step" type="button" class="btn btn-primary contact__next contact__submit">Próxima etapa</button>
+        </div>
       </form>
     </section>
     <footer class="footer">
@@ -125,5 +205,6 @@
         <span>Napolitana Pizzaria © 2023 - Todos os direitos reservados</span>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
